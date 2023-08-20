@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LMS_API\\LMS_API\\LMS_API.csproj": {}
+    "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\LMS_API.csproj": {}
   },
   "projects": {
-    "D:\\LMS_API\\LMS_API\\LMS_API.csproj": {
+    "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\LMS_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LMS_API\\LMS_API\\LMS_API.csproj",
+        "projectUniqueName": "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\LMS_API.csproj",
         "projectName": "LMS_API",
-        "projectPath": "D:\\LMS_API\\LMS_API\\LMS_API.csproj",
+        "projectPath": "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\LMS_API.csproj",
         "packagesPath": "C:\\Users\\hacon\\.nuget\\packages\\",
-        "outputPath": "D:\\LMS_API\\LMS_API\\obj\\",
+        "outputPath": "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

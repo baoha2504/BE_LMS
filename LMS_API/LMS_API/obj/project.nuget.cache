@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "urf9//msGXxPW2sfUbkqYYqvE3PlYVQVmEAJDMSGWY6WUVr6tN2qqp/SJNgmf5LbKCxMlkEiMwMOLhw9wcJesg==",
+  "dgSpecHash": "7t5HWXhlKmFrvBKlX5r6nZAwcuIM4H73QkosUDq8gztUOIYTbOTkjlTIRk32DGetbRAyeVeOyK3JxylsaykMHw==",
   "success": true,
-  "projectFilePath": "D:\\LMS_API\\LMS_API\\LMS_API.csproj",
+  "projectFilePath": "D:\\github\\LMS_BE_DEPLOY\\LMS_API\\LMS_API\\LMS_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hacon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hacon\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
