@@ -1,0 +1,154 @@
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\appsettings.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.exe
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.deps.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.runtimeconfig.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfo.cs
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.LMS_IMAGE.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.build.LMS_IMAGE.props
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LMS_IMAGE.props
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LMS_IMAGE.props
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\scopedcss\bundle\LMS_IMAGE.styles.css
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CopyComplete
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\refint\LMS_IMAGE.dll
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.genruntimeconfig.cache
+C:\Users\admin\source\repos\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\ref\LMS_IMAGE.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\appsettings.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.exe
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.deps.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.runtimeconfig.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.LMS_IMAGE.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.build.LMS_IMAGE.props
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LMS_IMAGE.props
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LMS_IMAGE.props
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\scopedcss\bundle\LMS_IMAGE.styles.css
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\refint\LMS_IMAGE.dll
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.genruntimeconfig.cache
+C:\Users\admin\OneDrive\Máy tính\LMS\LMS_IMAGE1\LMS_IMAGE\obj\Debug\net6.0\ref\LMS_IMAGE.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\appsettings.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.staticwebassets.runtime.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.exe
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.deps.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.runtimeconfig.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.AssemblyReference.cache
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfoInputs.cache
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfo.cs
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CoreCompileInputs.cache
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\scopedcss\bundle\LMS_IMAGE.styles.css
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CopyComplete
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\refint\LMS_IMAGE.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.pdb
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.genruntimeconfig.cache
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Debug\net6.0\ref\LMS_IMAGE.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\appsettings.Development.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\appsettings.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.staticwebassets.runtime.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.exe
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.deps.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.runtimeconfig.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\LMS_IMAGE.pdb
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.AssemblyReference.cache
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.GeneratedMSBuildEditorConfig.editorconfig
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfoInputs.cache
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.AssemblyInfo.cs
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CoreCompileInputs.cache
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cs
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.MvcApplicationPartsAssemblyInfo.cache
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.build.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\staticwebassets.development.json
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\scopedcss\bundle\LMS_IMAGE.styles.css
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.csproj.CopyComplete
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\refint\LMS_IMAGE.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.pdb
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\LMS_IMAGE.genruntimeconfig.cache
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\obj\Debug\net6.0\ref\LMS_IMAGE.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Humanizer.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\LMS_BE_IMAGE\LMS_IMAGE\LMS_IMAGE\LMS_IMAGE\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

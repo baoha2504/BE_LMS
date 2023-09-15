@@ -1,0 +1,11 @@
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\LMS_IMAGE.exe
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\LMS_IMAGE.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\LMS_IMAGE.deps.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\LMS_IMAGE.runtimeconfig.json
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\LMS_IMAGE.pdb
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hacon\Desktop\LMS_IMAGE_TEST\LMS_IMAGE\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

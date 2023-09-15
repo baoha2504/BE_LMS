@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "LP9mHYjBLLiiY7CSAB3zbP9TGT1SIrnRGtKtNnMyhd0=",
+  "Source": "LMS_IMAGE",
+  "BasePath": "_content/LMS_IMAGE",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LMS_IMAGE\\wwwroot",
+      "Source": "LMS_IMAGE",
+      "ContentRoot": "C:\\Users\\hacon\\Desktop\\LMS_IMAGE_TEST\\LMS_IMAGE\\wwwroot\\",
+      "BasePath": "_content/LMS_IMAGE",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hacon\\Desktop\\LMS_IMAGE_TEST\\LMS_IMAGE\\wwwroot\\Upload\\Image\\defaultAvatar.jpg",
+      "SourceId": "LMS_IMAGE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hacon\\Desktop\\LMS_IMAGE_TEST\\LMS_IMAGE\\wwwroot\\",
+      "BasePath": "_content/LMS_IMAGE",
+      "RelativePath": "Upload/Image/defaultAvatar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Image\\defaultAvatar.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hacon\\Desktop\\LMS_IMAGE_TEST\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageStudent\\baodeptrai.jpg",
+      "SourceId": "LMS_IMAGE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hacon\\Desktop\\LMS_IMAGE_TEST\\LMS_IMAGE\\wwwroot\\",
+      "BasePath": "_content/LMS_IMAGE",
+      "RelativePath": "Upload/Image/ImageStudent/baodeptrai.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Image\\ImageStudent\\baodeptrai.jpg"
+    }
+  ]
+}
