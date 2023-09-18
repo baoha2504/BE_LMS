@@ -6,7 +6,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 using static System.Net.Mime.MediaTypeNames;
+using Microsoft.EntityFrameworkCore;
+using LMS_IMAGE.Entities;
+using LMS_API.Support;
 
 namespace LMS_IMAGE.Controllers
 {
@@ -15,6 +20,8 @@ namespace LMS_IMAGE.Controllers
 
     public class ImageController : ControllerBase
     {
+        LMSContext _context = new LMSContext();
+        Support support = new Support();
         private readonly IHostEnvironment _hostEnvironment;
 
         public ImageController(IHostEnvironment hostEnvironment)
@@ -25,8 +32,8 @@ namespace LMS_IMAGE.Controllers
 
         //upload ảnh student
         [HttpPost]
-        [Route("PostImageStudent")]
-        public async Task<string> PostImageStudent(IFormFile imagefile)
+        [Route("PostImageStudent/{idstudent}")]
+        public async Task<string> PostImageStudent(Guid idstudent, IFormFile imagefile)
         {
             try
             {
@@ -38,20 +45,20 @@ namespace LMS_IMAGE.Controllers
                     {
                         Directory.CreateDirectory(folderPath);
                     }
-
-                    string filePath = Path.Combine(folderPath, imagefile.FileName);
-
-                    if (System.IO.File.Exists(filePath))
+                    var student = await _context.StudentLogins.SingleOrDefaultAsync(x => x.Id == idstudent);
+                    if (student == null)
                     {
-                        System.IO.File.Delete(filePath);
+                        return "Không tìm thấy học sinh";
                     }
-
-                    using (FileStream filestream = System.IO.File.Create(filePath))
+                    var imagePath = Path.Combine(folderPath, idstudent.ToString()) + ".jpg";
+                    if (System.IO.File.Exists(imagePath))
                     {
-                        imagefile.CopyTo(filestream);
-                        filestream.Flush();
-
+                        System.IO.File.Delete(imagePath);
                     }
+                    string filePathSQL = await support.CompressAndSaveImage(imagefile, folderPath, idstudent);
+                    student.Avatar = filePathSQL;
+                    _context.SaveChanges();
+
                     return "Upload thành công";
                 }
                 else
@@ -65,51 +72,170 @@ namespace LMS_IMAGE.Controllers
             }
         }
 
-        [HttpGet("Upload/Image/ImageStudent/{imageName}")]
-        public IActionResult GetImage(string imageName)
+        [HttpDelete]
+        [Route("Delete/ImageStudent/{idstudent}")]
+        public IActionResult DeleteImageStudent(string idstudent)
         {
-            imageName = imageName + ".jpg";
+            Guid id = Guid.Parse(idstudent);
+            var studentlogin = _context.StudentLogins.SingleOrDefault(x => x.Id == id);
+            if (studentlogin == null)
+            {
+                return BadRequest("Không tìm thấy học sinh");
+            }
+            idstudent = idstudent + ".jpg";
             string webRootPath = _hostEnvironment.ContentRootPath;
-            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageStudent", imageName);
-
+            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageStudent", idstudent);
             if (System.IO.File.Exists(imagePath))
             {
-                byte[] imageData = System.IO.File.ReadAllBytes(imagePath);
-                return new FileContentResult(imageData, "image/jpeg");
+                System.IO.File.Delete(imagePath);
+                studentlogin.Avatar = null;
+                _context.SaveChanges();
+                return Ok("Xóa thành công."); 
             }
             else
             {
                 return NotFound("Hình ảnh không tồn tại.");
+            }
+        }
+
+
+        //upload ảnh office
+        [HttpPost]
+        [Route("PostImageOffice/{id}")]
+        public async Task<string> PostImageOffice(IFormFile imagefile, Guid id)
+        {
+            try
+            {
+                if (imagefile.Length > 0)
+                {
+                    string webRootPath = _hostEnvironment.ContentRootPath;
+                    string folderPath = Path.Combine(webRootPath, "wwwroot/Upload", "Image", "ImageOffice");
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+                    var student = await _context.StudentInfos.SingleOrDefaultAsync(x => x.StudentId == id);
+                    if (student == null)
+                    {
+                        return "Không tìm thấy học sinh";
+                    }
+                    var imagePath = Path.Combine(folderPath, id.ToString()) + ".jpg";
+                    if (System.IO.File.Exists(imagePath))
+                    {
+                        System.IO.File.Delete(imagePath);
+                    }
+                    string filePathSQL = await support.CompressAndSaveImage(imagefile, folderPath, id);
+                    student.ImageOffice = filePathSQL;
+                    _context.SaveChanges();
+
+                    return "Upload thành công";
+                }
+                else
+                {
+                    return "Lỗi ảnh!!";
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message.ToString();
             }
         }
 
         [HttpDelete]
-        [Route("Delete/ImageStudent/{imageName}")]
-        public IActionResult DeleteImageStudent(string imageName)
+        [Route("Delete/ImageOffice/{idstudent}")]
+        public IActionResult DeleteImageOffice(string idstudent)
         {
-            imageName = imageName + ".jpg";
+            Guid id = Guid.Parse(idstudent);
+            var student = _context.StudentInfos.SingleOrDefault(x => x.StudentId == id);
+            if (student == null)
+            {
+                return BadRequest("Không tìm thấy học sinh");
+            }
+            idstudent = idstudent + ".jpg";
             string webRootPath = _hostEnvironment.ContentRootPath;
-            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageStudent", imageName);
+            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageOffice", idstudent);
             if (System.IO.File.Exists(imagePath))
             {
                 System.IO.File.Delete(imagePath);
-                string defaultImageName = "defaultAvatar.jpg";
-                string defaultImagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/", defaultImageName);
-                if (System.IO.File.Exists(defaultImagePath))
-                {
-                    System.IO.File.Copy(defaultImagePath, imagePath, true);
-
-                    return Ok("Xóa và thay thế ảnh thành công.");
-                }
-                else
-                {
-                    return NotFound("Không tìm thấy ảnh mặc định.");
-                }
+                student.ImageOffice = null;
+                _context.SaveChanges();
+                return Ok("Xóa thành công.");
             }
             else
             {
                 return NotFound("Hình ảnh không tồn tại.");
             }
         }
+
+        //upload ảnh user
+        [HttpPost]
+        [Route("PostImageUser/{iduser}")]
+        public async Task<string> PostImageUser(Guid iduser, IFormFile imagefile)
+        {
+            try
+            {
+                if (imagefile.Length > 0)
+                {
+                    string webRootPath = _hostEnvironment.ContentRootPath;
+                    string folderPath = Path.Combine(webRootPath, "wwwroot/Upload", "Image", "ImageUser");
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+                    var user = await _context.UserLogins.SingleOrDefaultAsync(x => x.Id == iduser);
+                    if (user == null)
+                    {
+                        return "Không tìm thấy học sinh";
+                    }
+                    var imagePath = Path.Combine(folderPath, iduser.ToString()) + ".jpg";
+                    if (System.IO.File.Exists(imagePath))
+                    {
+                        System.IO.File.Delete(imagePath);
+                    }
+                    string filePathSQL = await support.CompressAndSaveImage(imagefile, folderPath, iduser);
+                    user.Avatar = filePathSQL;
+                    _context.SaveChanges();
+
+                    return "Upload thành công";
+                }
+                else
+                {
+                    return "Lỗi ảnh!!";
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message.ToString();
+            }
+        }
+
+       
+
+        [HttpDelete]
+        [Route("Delete/ImageUser/{iduser}")]
+        public IActionResult DeleteImageUser(string iduser)
+        {
+            Guid id = Guid.Parse(iduser);
+            var user = _context.UserLogins.SingleOrDefault(x => x.Id == id);
+            if (user == null)
+            {
+                return BadRequest("Không tìm thấy nguoi dung");
+            }
+            iduser = iduser + ".jpg";
+            string webRootPath = _hostEnvironment.ContentRootPath;
+            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageUser", iduser);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+                user.Avatar = null;
+                _context.SaveChanges();
+                return Ok("Xóa ảnh thành công.");
+            }
+            else
+            {
+                return NotFound("Hình ảnh không tồn tại.");
+            }
+        }
+
     }
 }

@@ -55,7 +55,7 @@ namespace LMS_IMAGE.Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=113.178.88.209,13393;Initial Catalog=LMS;Persist Security Info=True;User ID=sa;Password=123456");
+                optionsBuilder.UseSqlServer("Data Source=14.231.93.67,13393;Initial Catalog=LMS;Persist Security Info=True;User ID=sa;Password=123456");
             }
         }
 
