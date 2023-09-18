@@ -7,7 +7,7 @@ namespace LMS_IMAGE.Entities
     {
         public CtDaoTao()
         {
-            Mhs = new HashSet<MonHoc>();
+            CtdtMhs = new HashSet<CtdtMh>();
         }
 
         public string Code { get; set; } = null!;
@@ -27,7 +27,6 @@ namespace LMS_IMAGE.Entities
         public virtual UserInfo? Approver { get; set; }
         public virtual CtdtState? StateNavigation { get; set; }
         public virtual CtdtType? TypeNavigation { get; set; }
-
-        public virtual ICollection<MonHoc> Mhs { get; set; }
+        public virtual ICollection<CtdtMh> CtdtMhs { get; set; }
     }
 }

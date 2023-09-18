@@ -8,8 +8,8 @@ namespace LMS_IMAGE.Entities
         public MonHoc()
         {
             BaiGiangs = new HashSet<BaiGiang>();
+            CtdtMhs = new HashSet<CtdtMh>();
             KhungBgs = new HashSet<KhungBg>();
-            Ctdts = new HashSet<CtDaoTao>();
         }
 
         public string Code { get; set; } = null!;
@@ -30,8 +30,7 @@ namespace LMS_IMAGE.Entities
         public virtual MhGroup? GroupNavigation { get; set; }
         public virtual MhState? StateNavigation { get; set; }
         public virtual ICollection<BaiGiang> BaiGiangs { get; set; }
+        public virtual ICollection<CtdtMh> CtdtMhs { get; set; }
         public virtual ICollection<KhungBg> KhungBgs { get; set; }
-
-        public virtual ICollection<CtDaoTao> Ctdts { get; set; }
     }
 }

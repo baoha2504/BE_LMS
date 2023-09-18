@@ -7,6 +7,7 @@ namespace LMS_IMAGE.Entities
     {
         public KhungBg()
         {
+            BaiGiangs = new HashSet<BaiGiang>();
             InverseParent = new HashSet<KhungBg>();
         }
 
@@ -14,7 +15,6 @@ namespace LMS_IMAGE.Entities
         public string? KbgType { get; set; }
         public string? Type { get; set; }
         public string? MhId { get; set; }
-        public string? ShortTitle { get; set; }
         public string? Title { get; set; }
         public int? ParentId { get; set; }
         public int? SoTiet { get; set; }
@@ -23,12 +23,12 @@ namespace LMS_IMAGE.Entities
         public DateTime? CreateTime { get; set; }
         public Guid? ModifyUser { get; set; }
         public DateTime? ModifyTime { get; set; }
-        public int? BgId { get; set; }
+        public int? ShortTitle { get; set; }
 
-        public virtual BaiGiang? Bg { get; set; }
         public virtual MonHoc? Mh { get; set; }
         public virtual KhungBg? Parent { get; set; }
         public virtual KhungBgType? TypeNavigation { get; set; }
+        public virtual ICollection<BaiGiang> BaiGiangs { get; set; }
         public virtual ICollection<KhungBg> InverseParent { get; set; }
     }
 }

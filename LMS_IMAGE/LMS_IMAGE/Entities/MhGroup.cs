@@ -13,7 +13,6 @@ namespace LMS_IMAGE.Entities
         public string Code { get; set; } = null!;
         public string? Name { get; set; }
         public string? Note { get; set; }
-        public Guid? ApproverId { get; set; }
         public Guid? CreateUser { get; set; }
         public DateTime? CreateTime { get; set; }
         public Guid? ModifyUser { get; set; }

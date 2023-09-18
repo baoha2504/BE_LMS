@@ -24,6 +24,7 @@ namespace LMS_IMAGE.Entities
         public virtual DbSet<ChatRoom> ChatRooms { get; set; } = null!;
         public virtual DbSet<ClassYear> ClassYears { get; set; } = null!;
         public virtual DbSet<CtDaoTao> CtDaoTaos { get; set; } = null!;
+        public virtual DbSet<CtdtMh> CtdtMhs { get; set; } = null!;
         public virtual DbSet<CtdtState> CtdtStates { get; set; } = null!;
         public virtual DbSet<CtdtType> CtdtTypes { get; set; } = null!;
         public virtual DbSet<DanhMucDiaChi> DanhMucDiaChis { get; set; } = null!;
@@ -55,6 +56,7 @@ namespace LMS_IMAGE.Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=14.231.93.67,13393;Initial Catalog=LMS;Persist Security Info=True;User ID=sa;Password=123456");
             }
         }
@@ -108,6 +110,8 @@ namespace LMS_IMAGE.Entities
 
                 entity.Property(e => e.GiaovienId).HasColumnName("giaovien_id");
 
+                entity.Property(e => e.KbgId).HasColumnName("kbg_id");
+
                 entity.Property(e => e.MhId)
                     .HasMaxLength(10)
                     .IsUnicode(false)
@@ -123,6 +127,11 @@ namespace LMS_IMAGE.Entities
                     .WithMany(p => p.BaiGiangs)
                     .HasForeignKey(d => d.GiaovienId)
                     .HasConstraintName("FK__bai_giang__giaov__66603565");
+
+                entity.HasOne(d => d.Kbg)
+                    .WithMany(p => p.BaiGiangs)
+                    .HasForeignKey(d => d.KbgId)
+                    .HasConstraintName("FK__bai_giang__kbg_i__2739D489");
 
                 entity.HasOne(d => d.Mh)
                     .WithMany(p => p.BaiGiangs)
@@ -361,23 +370,44 @@ namespace LMS_IMAGE.Entities
                     .WithMany(p => p.CtDaoTaos)
                     .HasForeignKey(d => d.Type)
                     .HasConstraintName("FK__ct_dao_tao__type__6C190EBB");
+            });
 
-                entity.HasMany(d => d.Mhs)
-                    .WithMany(p => p.Ctdts)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "CtdtMh",
-                        l => l.HasOne<MonHoc>().WithMany().HasForeignKey("MhId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__ctdt_mh__mh_id__6E01572D"),
-                        r => r.HasOne<CtDaoTao>().WithMany().HasForeignKey("Ctdt").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__ctdt_mh__ctdt__6D0D32F4"),
-                        j =>
-                        {
-                            j.HasKey("Ctdt", "MhId").HasName("PK__ctdt_mh__1E1F9DE52232531B");
+            modelBuilder.Entity<CtdtMh>(entity =>
+            {
+                entity.HasKey(e => new { e.Ctdt, e.MhId })
+                    .HasName("PK__ctdt_mh__1E1F9DE52232531B");
 
-                            j.ToTable("ctdt_mh");
+                entity.ToTable("ctdt_mh");
 
-                            j.IndexerProperty<string>("Ctdt").HasMaxLength(10).IsUnicode(false).HasColumnName("ctdt");
+                entity.Property(e => e.Ctdt)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("ctdt");
 
-                            j.IndexerProperty<string>("MhId").HasMaxLength(10).IsUnicode(false).HasColumnName("mh_id");
-                        });
+                entity.Property(e => e.MhId)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("mh_id");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("create_time");
+
+                entity.Property(e => e.CreateUser).HasColumnName("create_user");
+
+                entity.Property(e => e.Note).HasColumnName("note");
+
+                entity.HasOne(d => d.CtdtNavigation)
+                    .WithMany(p => p.CtdtMhs)
+                    .HasForeignKey(d => d.Ctdt)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__ctdt_mh__ctdt__6D0D32F4");
+
+                entity.HasOne(d => d.Mh)
+                    .WithMany(p => p.CtdtMhs)
+                    .HasForeignKey(d => d.MhId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__ctdt_mh__mh_id__6E01572D");
             });
 
             modelBuilder.Entity<CtdtState>(entity =>
@@ -463,8 +493,6 @@ namespace LMS_IMAGE.Entities
                     .IsUnicode(false)
                     .HasColumnName("code");
 
-                entity.Property(e => e.ApproverId).HasColumnName("approver_id");
-
                 entity.Property(e => e.CreateTime)
                     .HasColumnType("datetime")
                     .HasColumnName("create_time");
@@ -489,8 +517,6 @@ namespace LMS_IMAGE.Entities
                 entity.ToTable("khung_bg");
 
                 entity.Property(e => e.Id).HasColumnName("id");
-
-                entity.Property(e => e.BgId).HasColumnName("bg_id");
 
                 entity.Property(e => e.CreateTime)
                     .HasColumnType("datetime")
@@ -517,9 +543,7 @@ namespace LMS_IMAGE.Entities
 
                 entity.Property(e => e.ParentId).HasColumnName("parent_id");
 
-                entity.Property(e => e.ShortTitle)
-                    .HasMaxLength(50)
-                    .HasColumnName("short_title");
+                entity.Property(e => e.ShortTitle).HasColumnName("short_title");
 
                 entity.Property(e => e.SoTiet).HasColumnName("so_tiet");
 
@@ -531,11 +555,6 @@ namespace LMS_IMAGE.Entities
                     .HasMaxLength(10)
                     .IsUnicode(false)
                     .HasColumnName("type");
-
-                entity.HasOne(d => d.Bg)
-                    .WithMany(p => p.KhungBgs)
-                    .HasForeignKey(d => d.BgId)
-                    .HasConstraintName("FK__khung_bg__bg_id__6EF57B66");
 
                 entity.HasOne(d => d.Mh)
                     .WithMany(p => p.KhungBgs)
@@ -778,8 +797,6 @@ namespace LMS_IMAGE.Entities
                     .HasMaxLength(10)
                     .IsUnicode(false)
                     .HasColumnName("code");
-
-                entity.Property(e => e.ApproverId).HasColumnName("approver_id");
 
                 entity.Property(e => e.CreateTime)
                     .HasColumnType("datetime")

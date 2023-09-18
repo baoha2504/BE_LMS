@@ -74,13 +74,13 @@ namespace LMS_IMAGE.Controllers
 
         [HttpDelete]
         [Route("Delete/ImageStudent/{idstudent}")]
-        public IActionResult DeleteImageStudent(string idstudent)
+        public async Task<string> DeleteImageStudent(string idstudent)
         {
             Guid id = Guid.Parse(idstudent);
             var studentlogin = _context.StudentLogins.SingleOrDefault(x => x.Id == id);
             if (studentlogin == null)
             {
-                return BadRequest("Không tìm thấy học sinh");
+                return "Không tìm thấy học sinh";
             }
             idstudent = idstudent + ".jpg";
             string webRootPath = _hostEnvironment.ContentRootPath;
@@ -90,11 +90,11 @@ namespace LMS_IMAGE.Controllers
                 System.IO.File.Delete(imagePath);
                 studentlogin.Avatar = null;
                 _context.SaveChanges();
-                return Ok("Xóa thành công."); 
+                return "Xóa thành công."; 
             }
             else
             {
-                return NotFound("Hình ảnh không tồn tại.");
+                return "Hình ảnh không tồn tại.";
             }
         }
 
@@ -143,13 +143,13 @@ namespace LMS_IMAGE.Controllers
 
         [HttpDelete]
         [Route("Delete/ImageOffice/{idstudent}")]
-        public IActionResult DeleteImageOffice(string idstudent)
+        public async Task<string> DeleteImageOffice(string idstudent)
         {
             Guid id = Guid.Parse(idstudent);
             var student = _context.StudentInfos.SingleOrDefault(x => x.StudentId == id);
             if (student == null)
             {
-                return BadRequest("Không tìm thấy học sinh");
+                return "Không tìm thấy học sinh";
             }
             idstudent = idstudent + ".jpg";
             string webRootPath = _hostEnvironment.ContentRootPath;
@@ -159,11 +159,11 @@ namespace LMS_IMAGE.Controllers
                 System.IO.File.Delete(imagePath);
                 student.ImageOffice = null;
                 _context.SaveChanges();
-                return Ok("Xóa thành công.");
+                return "Xóa thành công.";
             }
             else
             {
-                return NotFound("Hình ảnh không tồn tại.");
+                return "Hình ảnh không tồn tại.";
             }
         }
 
@@ -213,13 +213,13 @@ namespace LMS_IMAGE.Controllers
 
         [HttpDelete]
         [Route("Delete/ImageUser/{iduser}")]
-        public IActionResult DeleteImageUser(string iduser)
+        public async Task<string> DeleteImageUser(string iduser)
         {
             Guid id = Guid.Parse(iduser);
             var user = _context.UserLogins.SingleOrDefault(x => x.Id == id);
             if (user == null)
             {
-                return BadRequest("Không tìm thấy nguoi dung");
+                return "Không tìm thấy nguoi dung";
             }
             iduser = iduser + ".jpg";
             string webRootPath = _hostEnvironment.ContentRootPath;
@@ -229,11 +229,11 @@ namespace LMS_IMAGE.Controllers
                 System.IO.File.Delete(imagePath);
                 user.Avatar = null;
                 _context.SaveChanges();
-                return Ok("Xóa ảnh thành công.");
+                return "Xóa ảnh thành công.";
             }
             else
             {
-                return NotFound("Hình ảnh không tồn tại.");
+                return "Hình ảnh không tồn tại.";
             }
         }
 
