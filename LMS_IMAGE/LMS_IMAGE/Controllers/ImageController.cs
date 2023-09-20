@@ -101,8 +101,8 @@ namespace LMS_IMAGE.Controllers
 
         //upload ảnh office
         [HttpPost]
-        [Route("PostImageOffice/{id}")]
-        public async Task<string> PostImageOffice(IFormFile imagefile, Guid id)
+        [Route("PostImageOffice/{idstudent}")]
+        public async Task<string> PostImageOffice(IFormFile imagefile, Guid idstudent)
         {
             try
             {
@@ -114,17 +114,17 @@ namespace LMS_IMAGE.Controllers
                     {
                         Directory.CreateDirectory(folderPath);
                     }
-                    var student = await _context.StudentInfos.SingleOrDefaultAsync(x => x.StudentId == id);
+                    var student = await _context.StudentInfos.SingleOrDefaultAsync(x => x.StudentId == idstudent);
                     if (student == null)
                     {
                         return "Không tìm thấy học sinh";
                     }
-                    var imagePath = Path.Combine(folderPath, id.ToString()) + ".jpg";
+                    var imagePath = Path.Combine(folderPath, idstudent.ToString()) + ".jpg";
                     if (System.IO.File.Exists(imagePath))
                     {
                         System.IO.File.Delete(imagePath);
                     }
-                    string filePathSQL = await support.CompressAndSaveImage(imagefile, folderPath, id);
+                    string filePathSQL = await support.CompressAndSaveImage(imagefile, folderPath, idstudent);
                     student.ImageOffice = filePathSQL;
                     _context.SaveChanges();
 
@@ -237,5 +237,75 @@ namespace LMS_IMAGE.Controllers
             }
         }
 
+
+        //upload ảnh chatroom
+        [HttpPost]
+        [Route("PostImageChatRoom/{idroom}")]
+        public async Task<string> PostImageChatRoom(Guid idroom, IFormFile file)
+        {
+            try
+            {
+                if (file.Length > 0)
+                {
+                    string webRootPath = _hostEnvironment.ContentRootPath;
+                    string folderPath = Path.Combine(webRootPath, "wwwroot/Upload", "Image", "ImageChatRoom");
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+                    var room = await _context.ChatRooms.SingleOrDefaultAsync(x => x.RoomId == idroom);
+                    if (room == null)
+                    {
+                        return "Không tìm thấy phòng";
+                    }
+                    var filePath = Path.Combine(folderPath, idroom.ToString()) + ".jpg";
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                    string filePathSQL = await support.CompressAndSaveImage(file, folderPath, idroom);
+                    room.Avatar = filePathSQL;
+                    _context.SaveChanges();
+
+                    return "Upload thành công";
+                }
+                else
+                {
+                    return "Lỗi ảnh!!";
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message.ToString();
+            }
+        }
+
+
+
+        [HttpDelete]
+        [Route("Delete/ImageChatRoom/{idroom}")]
+        public async Task<string> DeleteImageChatRoom(string idroom)
+        {
+            Guid id = Guid.Parse(idroom);
+            var room = _context.ChatRooms.SingleOrDefault(x => x.RoomId == id);
+            if (room == null)
+            {
+                return "Không tìm thấy nguoi dung";
+            }
+            idroom = idroom + ".jpg";
+            string webRootPath = _hostEnvironment.ContentRootPath;
+            string imagePath = Path.Combine(webRootPath, "wwwroot/Upload/Image/ImageChatRoom", idroom);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+                room.Avatar = null;
+                _context.SaveChanges();
+                return "Xóa ảnh thành công.";
+            }
+            else
+            {
+                return "Hình ảnh không tồn tại.";
+            }
+        }
     }
 }

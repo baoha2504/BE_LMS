@@ -24,6 +24,8 @@ namespace LMS_IMAGE.Entities
         public Guid? ModifyUser { get; set; }
         public DateTime? ModifyTime { get; set; }
         public string? Group { get; set; }
+        public string? FileGiaotrinh { get; set; }
+        public string? TenGiaotrinh { get; set; }
 
         public virtual UserInfo? Approver { get; set; }
         public virtual KhoiLop? GradeNavigation { get; set; }
