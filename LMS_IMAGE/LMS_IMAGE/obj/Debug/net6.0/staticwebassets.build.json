@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s6ZrBwumxinVwGLEzFs0mC3B7YN8reKuVckbgu0eovg=",
+  "Hash": "gvyKkYCw463L3mGUUHcuhKuZDKVYuVphrYjZXr6KPBQ=",
   "Source": "LMS_IMAGE",
   "BasePath": "_content/LMS_IMAGE",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\ListenningFriend_20230920091550.pdf",
+      "Identity": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\deploy_20230920110245.docx",
       "SourceId": "LMS_IMAGE",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\",
       "BasePath": "_content/LMS_IMAGE",
-      "RelativePath": "Upload/FileBaiGiang/ListenningFriend_20230920091550.pdf",
+      "RelativePath": "Upload/FileBaiGiang/deploy_20230920110245.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Upload\\FileBaiGiang\\ListenningFriend_20230920091550.pdf"
+      "OriginalItemSpec": "wwwroot\\Upload\\FileBaiGiang\\deploy_20230920110245.docx"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\Deploy_20230920110323.docx",
+      "SourceId": "LMS_IMAGE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\",
+      "BasePath": "_content/LMS_IMAGE",
+      "RelativePath": "Upload/FileBaiGiang/Deploy_20230920110323.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\FileBaiGiang\\Deploy_20230920110323.docx"
     },
     {
       "Identity": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\sample_explain.pdf",
