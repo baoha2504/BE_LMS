@@ -31,9 +31,11 @@ namespace LMS_IMAGE.Controllers
                     }
                     string fileExtension = Path.GetExtension(file.FileName).ToLower();
 
-                    if (fileExtension != ".pdf" && fileExtension != ".docx")
+                    List<string> allowedExtensions = new List<string> { ".pdf", ".docx", ".doc", ".xlsx", ".xls" };
+
+                    if (!allowedExtensions.Contains(fileExtension))
                     {
-                        return "Tệp tin không hợp lệ. Chỉ chấp nhận tệp tin PDF và DOCX.";
+                        return "Tệp tin không hợp lệ. Chỉ chấp nhận tệp tin PDF, DOCX, DOC, XLSX, và XLS.";
                     }
 
 
@@ -90,9 +92,11 @@ namespace LMS_IMAGE.Controllers
                     }
                     string fileExtension = Path.GetExtension(file.FileName).ToLower();
 
-                    if (fileExtension != ".pdf" && fileExtension != ".docx")
+                    List<string> allowedExtensions = new List<string> { ".pdf", ".docx", ".doc", ".xlsx", ".xls" };
+
+                    if (!allowedExtensions.Contains(fileExtension))
                     {
-                        return "Tệp tin không hợp lệ. Chỉ chấp nhận tệp tin PDF và DOCX.";
+                        return "Tệp tin không hợp lệ. Chỉ chấp nhận tệp tin PDF, DOCX, DOC, XLSX, và XLS.";
                     }
 
                     var monhoc = _context.MonHocs.SingleOrDefault(x => x.Code == codemonhoc);
@@ -157,19 +161,19 @@ namespace LMS_IMAGE.Controllers
             {
                 Directory.CreateDirectory(folderPath);
             }
+            List<string> allowedExtensions = new List<string> { ".pdf", ".docx" };
 
-            string[] allowedExtensions = { ".pdf", ".docx" };
             bool fileDeleted = false;
+
             foreach (string filePath in Directory.GetFiles(folderPath))
             {
                 string fileName = Path.GetFileName(filePath);
                 string fileExtension = Path.GetExtension(fileName).ToLower();
 
-                if (allowedExtensions.Contains(fileExtension) && monhoc.FileGiaotrinh.Contains(fileName))
+                if (allowedExtensions.Contains(fileExtension) && fileName.Contains(monhoc.FileGiaotrinh))
                 {
                     System.IO.File.Delete(filePath);
                     fileDeleted = true;
-                    break;
                 }
             }
 
