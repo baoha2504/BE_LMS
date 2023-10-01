@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6a1NEllpY5csPm5xAfUT5EtPlUI9ilGqMpbS+7RLwuU=",
+  "Hash": "xPEIkvwvSKp8APWPImZMsSwp7gjV3CfSIunN6rGa/GQ=",
   "Source": "LMS_IMAGE",
   "BasePath": "_content/LMS_IMAGE",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Image\\ImageStudent\\ea9fd795-0450-4d5b-87fc-9108e1d7bd60.jpg"
+    },
+    {
+      "Identity": "D:\\LMS_BE_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageUser\\9d9f0a86-a225-4827-8274-7c423de959b5.jpg",
+      "SourceId": "LMS_IMAGE",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LMS_BE_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\",
+      "BasePath": "_content/LMS_IMAGE",
+      "RelativePath": "Upload/Image/ImageUser/9d9f0a86-a225-4827-8274-7c423de959b5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\Image\\ImageUser\\9d9f0a86-a225-4827-8274-7c423de959b5.jpg"
     },
     {
       "Identity": "D:\\LMS_BE_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageUser\\images.jpg",
