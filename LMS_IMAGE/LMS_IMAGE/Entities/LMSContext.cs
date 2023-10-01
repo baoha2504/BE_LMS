@@ -856,6 +856,8 @@ namespace LMS_IMAGE.Entities
 
                 entity.Property(e => e.CreateUser).HasColumnName("create_user");
 
+                entity.Property(e => e.FileGiaotrinh).HasColumnName("file_giaotrinh");
+
                 entity.Property(e => e.Grade)
                     .HasMaxLength(10)
                     .IsUnicode(false)
@@ -884,6 +886,8 @@ namespace LMS_IMAGE.Entities
                     .HasMaxLength(10)
                     .IsUnicode(false)
                     .HasColumnName("state");
+
+                entity.Property(e => e.TenGiaotrinh).HasColumnName("ten_giaotrinh");
 
                 entity.HasOne(d => d.Approver)
                     .WithMany(p => p.MonHocs)

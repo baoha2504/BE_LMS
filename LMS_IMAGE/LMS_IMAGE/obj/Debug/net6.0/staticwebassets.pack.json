@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\Deploy_20230920110323.docx",
+      "PackagePath": "staticwebassets\\Upload\\FileBaiGiang\\Deploy_20230920110323.docx"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\deploy_20230920110245.docx",
+      "PackagePath": "staticwebassets\\Upload\\FileBaiGiang\\deploy_20230920110245.docx"
+    },
+    {
       "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\FileBaiGiang\\sample_explain.pdf",
       "PackagePath": "staticwebassets\\Upload\\FileBaiGiang\\sample_explain.pdf"
     },
@@ -23,10 +31,6 @@
     {
       "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageStudent\\ea9fd795-0450-4d5b-87fc-9108e1d7bd60.jpg",
       "PackagePath": "staticwebassets\\Upload\\Image\\ImageStudent\\ea9fd795-0450-4d5b-87fc-9108e1d7bd60.jpg"
-    },
-    {
-      "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageUser\\9d9f0a86-a225-4827-8274-7c423de959b5.jpg",
-      "PackagePath": "staticwebassets\\Upload\\Image\\ImageUser\\9d9f0a86-a225-4827-8274-7c423de959b5.jpg"
     },
     {
       "Id": "C:\\Users\\admin\\OneDrive\\Máy tính\\LMS\\LMS_IMAGE\\LMS_IMAGE\\LMS_IMAGE\\wwwroot\\Upload\\Image\\ImageUser\\images.jpg",
